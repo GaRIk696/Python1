@@ -3,7 +3,10 @@ if user_input.lstrip('-').isdigit():
     age = int(user_input)
     if age >= 0:
         if age >= 18:
-            print("Вы совершеннолетний.")
+            if age >= 130:
+                print("невозможный возраст")
+            else:
+                print("Вы совершеннолетний.")
         else:
             print("Вы несовершеннолетний.")
     else:
